@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import "./style.css";
 import Link from 'next/link';
-import { useRouter } from 'next/router';  // Import useRouter
+import { useRouter } from 'next/navigation';
+
 
 const Page = () => {
     const [oldPassword, setOldPassword] = useState("");
