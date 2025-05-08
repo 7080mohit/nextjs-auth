@@ -1,3 +1,4 @@
+"use client";
 import mysql from 'mysql2/promise';
 
 export default async function handler(req, res) {
@@ -18,7 +19,7 @@ export default async function handler(req, res) {
     }
   }
 }// app/api/auth/ChangePassword/route.js
-"use client";
+
 
 import { PrismaClient } from '@prisma/client';
 import bcrypt from "bcryptjs";
