@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   }
 }// app/api/auth/Logout/route.js
 
-import cookie from "cookie";
+import { parse as parseCookie, serialize as serializeCookie } from 'cookie';
 
 export async function POST(req) {
   try {
