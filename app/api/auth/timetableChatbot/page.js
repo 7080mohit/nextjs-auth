@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./style.css";
+//import "./style.css";
 
 const TimetableChatBot = () => {
   const [chatInput, setChatInput] = useState("");
