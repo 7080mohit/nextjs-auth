@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
 import { PrismaClient } from '@prisma/client';
 import bcrypt from "bcryptjs";
-import cookie from "cookie";
+import { parse as parseCookie, serialize as serializeCookie } from 'cookie';
 import jwt from "jsonwebtoken";
 
 const prisma = new PrismaClient();
